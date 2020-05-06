@@ -30,11 +30,16 @@ vertical-align: baseline;
   font-size: large;
 }
 
+container {
+  margin: 10px 10px 10px 10px;
+
+}
+
 header {
   display: flex;
   flex-direction: column;
   background:lightgrey;
-  height: 20vh;
+  height: 10vh;
   margin: 2px;
 }
 
@@ -112,9 +117,11 @@ projects2 {
 }
 
 footer {
-  flex-flow: column wrap;
-  justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* TRBL */
+  margin: 30px 4px 10px 2px;
 }
 
 footer p {
@@ -128,12 +135,13 @@ footer .button {
   background: white;
   color: black;
   border: 2px solid black;
-  
+  margin: 4px;
 
 }
 
 footer .button:hover {
   background: #2079b0;
+  margin: 4px;
 }
 
 
