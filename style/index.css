@@ -18,7 +18,7 @@ time, mark, audio, video {
 margin: 0;  
 padding: 0;  
 border: 0;  
-/* font-size: 100%;   */
+font-size: 100%; 
 font: inherit;  
 vertical-align: baseline;  
 }
@@ -32,8 +32,19 @@ vertical-align: baseline;
 
 }
 
+
 html {
   font-size: 62.5%;
+}
+
+h1 .name {
+  font-size: 2.6rem;
+
+}
+
+h1 .name2 {
+  font-size: 2.6rem;
+
 }
 
 
@@ -131,7 +142,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* TRBL */
+  justify-content: space-around;
   padding: 30px 4px 10px 2px;
 }
 
