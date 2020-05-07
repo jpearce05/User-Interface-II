@@ -18,7 +18,7 @@ time, mark, audio, video {
 margin: 0;  
 padding: 0;  
 border: 0;  
-font-size: 100%;  
+/* font-size: 100%;   */
 font: inherit;  
 vertical-align: baseline;  
 }
@@ -26,8 +26,14 @@ vertical-align: baseline;
 
 * {
   box-sizing: border-box;
-  border: 2px black;
-  font-size: large;
+  border: 1px solid black;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+html {
+  font-size: 62.5%;
 }
 
 
@@ -36,20 +42,20 @@ header {
   flex-direction: column;
   background:lightgrey;
   height: 10vh;
-  margin: 2px;
+  padding: 2px;
 }
 
 header .name {
-  font-size: 34px;
-  margin: 5px;
+  font-size: 3.2rem;
+  padding: 5px;
   
 }
 
 header nav {
   flex: row;
   justify-content: center;
-  font-size: 22px;
-  margin: 10px;
+  font-size: 2.2rem;
+  padding: 10px;
 }
 
 header nav .button {
@@ -65,22 +71,31 @@ header .button:hover {
 
 intro {
   display: flex;
-  margin: 4px;
+  padding: 4px;
+}
+
+intro img {
+  display: flex;
+  align-items: left;
+  object-fit: contain;
 }
 
 intro div {
   display: column;
   justify-content: space-evenly;
-  margin: 10px;
+  padding: 10px;
 }
 
 intro .name2 {
   font-size: 34px;
-  margin: 5px;
+  padding: 5px;
   
 }
 
 intro div .button {
+  flex: row;
+  justify-content: center;
+  font-size: 1.6rem;
   color: black;
   border: 2px solid black;
  
@@ -93,22 +108,22 @@ intro .button:hover {
 intro div p {
   display: flex;
   flex-wrap: wrap;
-  font-size: 22px;
+  font-size: 2.2rem;
 
 }
 
-projects1 {
+projects1 ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  /* TRBL */
-  margin: 10px 4px 10px 2px;
+  padding: 10px 4px 10px 2px;
 
 }
 
-projects2 {
+projects2 ul {
   display: flex;
   justify-content: space-evenly;
-  margin: 10px 4px 10px 2px;
+  padding: 10px 4px 10px 2px;
   
 }
 
@@ -117,12 +132,12 @@ footer {
   flex-direction: column;
   align-items: center;
   /* TRBL */
-  margin: 30px 4px 10px 2px;
+  padding: 30px 4px 10px 2px;
 }
 
 footer p {
   display: flex;
-  font-size: 22px;
+  font-size: 2.2rem;
   
 
 }
@@ -131,37 +146,122 @@ footer .button {
   background: white;
   color: black;
   border: 2px solid black;
-  margin: 4px;
+  padding: 4px;
 
 }
 
 footer .button:hover {
   background: #2079b0;
-  margin: 4px;
+  padding: 4px;
 }
 
-/* small devices phone */
+/* Small size, less than 500 */
 
-@media (max-width: 575.98px) {
-  /* test commit */
+@media (max-width: 499.98px) {
+  intro {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+  }
+
+  intro img {
+    display: flex;
+    object-fit: contain;
+  }
+
+  intro div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  intro div .button {
+    flex: row;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 6px;
+
+  }
+
+
+  projects1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+     
+  }
+
+  projects2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 4px 2px 4px 2px;
+
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 2px 2px 2px;
+
+  }
+
+  footer .button {
+    flex: row;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 4px;
+
+  }
+
 
 }
 
-/* landscape phones, less than 768 */
-@media (max-width: 767.98px) {
+
+/* Medium size, less than 800 */
+@media (max-width: 799.98px) {
+
+  header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+  }
+
+  projects1 ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+     
+  }
+
+  projects2 ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 4px 2px 4px 2px;
+
+  }
+
+  intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    
+  }
+
+
 
 }
 
-/* Medium devicses, less than 992px */
-@media (max-width: 991.98px) {
 
-}
-
-
-/* Large devices, less than 1200px */
-@media (max-width: 1199.98px) {
-
-}
 
 
 
